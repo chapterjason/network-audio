@@ -1,0 +1,10 @@
+syntax = "proto3";
+package message;
+
+option go_package = "./messages";
+
+import "google/protobuf/timestamp.proto";
+
+message Time {
+  google.protobuf.Timestamp time = 1;
+}

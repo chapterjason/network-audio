@@ -1,0 +1,12 @@
+syntax = "proto3";
+package message;
+
+option go_package = "./messages";
+
+import "google/protobuf/timestamp.proto";
+
+message Latency {
+  google.protobuf.Timestamp time = 1;
+
+  int64 latency = 2;
+}

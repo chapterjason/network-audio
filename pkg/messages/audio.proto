@@ -1,0 +1,13 @@
+syntax = "proto3";
+package message;
+
+option go_package = "./messages";
+
+import "google/protobuf/timestamp.proto";
+
+message Audio {
+  repeated double left = 1;
+  repeated double right = 2;
+
+  google.protobuf.Timestamp time = 3;
+}

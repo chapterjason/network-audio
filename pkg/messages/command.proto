@@ -1,0 +1,8 @@
+syntax = "proto3";
+package message;
+
+option go_package = "./messages";
+
+message Command {
+  string name = 1;
+}
